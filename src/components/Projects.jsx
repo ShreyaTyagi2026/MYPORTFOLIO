@@ -2,37 +2,55 @@ function Projects() {
 
   const projects = [
 
-    {
-      title: "CareerPilotAI",
+  {
+    title: "CareerPilotAI",
 
-      description:
-        "AI-powered interview report generator that analyzes resumes and generates structured interview readiness reports using Gemini API integration.",
+    description:
+      "AI-powered interview report generator that analyzes resumes and generates structured interview readiness reports using Gemini API integration.",
 
-      tech:
-        "React • Node.js • Express • MongoDB • Gemini API"
-    },
+    tech:
+      "React • Node.js • Express • MongoDB • Gemini API",
 
-    {
-      title: "AskNova",
+    live:
+      "https://career-pilot-ai-two.vercel.app/",
 
-      description:
-        "Perplexity-inspired AI search assistant with intelligent real-time responses, secure authentication, and optimized LLM integrations.",
+    github:
+      "https://github.com/shreyatyagi00/CareerPilotAI"
+  },
 
-      tech:
-        "React • Node.js • Gemini API • Mistral API"
-    },
+  {
+    title: "AskNova",
 
-    {
-      title: "Moodify",
+    description:
+      "Perplexity-inspired AI search assistant with intelligent real-time responses, secure authentication, and optimized LLM integrations.",
 
-      description:
-        "Mood-based music recommendation system using MediaPipe facial expression detection and full-stack architecture.",
+    tech:
+      "React • Node.js • Gemini API • Mistral API",
 
-      tech:
-        "React • Express • MediaPipe • REST APIs"
-    }
+    live:
+      "https://ask-nova-xi.vercel.app",
 
-  ];
+    github:
+      "https://github.com/shreyatyagi00/AskNova"
+  },
+
+  {
+    title: "Moodify",
+
+    description:
+      "Mood-based music recommendation system using MediaPipe facial expression detection and full-stack architecture.",
+
+    tech:
+      "React • Express • MediaPipe • REST APIs",
+
+    live:
+      " https://moodify-fs.vercel.app",
+
+    github:
+      "https://github.com/shreyatyagi00/MOODIFY"
+  }
+
+];
 
   return (
 
@@ -94,19 +112,29 @@ function Projects() {
 
             <div className="mt-10 flex gap-4">
 
-              <button className="px-6 py-3 rounded-full bg-gradient-to-r from-pink-300 to-purple-400 text-white hover:-translate-y-1 transition duration-300">
+  <a
+    href={project.live}
+    target="_blank"
+    rel="noreferrer"
+    className="px-6 py-3 rounded-full bg-gradient-to-r from-pink-300 to-purple-400 text-white hover:-translate-y-1 transition duration-300"
+  >
 
-                Live Demo
+    Live Demo
 
-              </button>
+  </a>
 
-              <button className="px-6 py-3 rounded-full border border-pink-300 text-pink-200 hover:bg-pink-300 hover:text-[#21161d] transition duration-300">
+  <a
+    href={project.github}
+    target="_blank"
+    rel="noreferrer"
+    className="px-6 py-3 rounded-full border border-pink-300 text-pink-200 hover:bg-pink-300 hover:text-[#21161d] transition duration-300"
+  >
 
-                GitHub
+    GitHub
 
-              </button>
+  </a>
 
-            </div>
+</div>
 
           </div>
 
